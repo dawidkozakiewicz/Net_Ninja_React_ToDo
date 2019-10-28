@@ -9,6 +9,7 @@ class App extends Component {
   }
 
   handleCitySubmit = (e) => {
+    const cities = ['Wrocław', 'Warszawa', 'Gdańsk', 'Kraków', 'Poznań', 'Łódź', 'Opole', 'Katowice', 'Lublin']
     e.preventDefault();
     console.log('żądanie wysłane');
     const API = 'http://api.openweathermap.org/data/2.5/weather?q=Wrocław&appid=84aea1ab45e8d501835d9128346165db&units=metric'
